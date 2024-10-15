@@ -21,8 +21,8 @@ This repository contains an end-to-end Business Intelligence (BI) implementation
 ## Project Steps
 ### 1. Data Extraction
 - Downloaded datasets from the following open data portals:
-  - **[Food Inspections - Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5)**
-  - **[Restaurant and Food Establishment Inspections - Dallas OpenData](https://www.dallasopendata.com/Health-Human-Services/Restaurant-and-Food-Establishment-Inspections/y64m-wzk9)**
+  - **[Food Inspections - Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data_preview)**
+  - **[Restaurant and Food Establishment Inspections - Dallas OpenData](https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct/data_preview)**
 
 ### 2. Data Profiling
 - **Profiling Tools:** Alteryx, Python (YData profiling)
@@ -66,8 +66,8 @@ This repository contains an end-to-end Business Intelligence (BI) implementation
   - Year-over-year trends in food inspection outcomes for Chicago and Dallas.
 
 ## Important Links
-- **Chicago Food Inspections Data:** [Food Inspections - Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5)
-- **Dallas Food Inspections Data:** [Restaurant and Food Establishment Inspections - Dallas OpenData](https://www.dallasopendata.com/Health-Human-Services/Restaurant-and-Food-Establishment-Inspections/y64m-wzk9)
+- **Chicago Food Inspections Data:** [Food Inspections - Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data_preview)
+- **Dallas Food Inspections Data:** [Restaurant and Food Establishment Inspections - Dallas OpenData](https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct/data_preview)
 
 ## Conclusion
 This project provides a comprehensive BI solution to analyze food inspection data from Chicago and Dallas. By leveraging various tools and technologies, we successfully integrated disparate datasets, created a dimensional model, and provided actionable insights through interactive visualizations.
