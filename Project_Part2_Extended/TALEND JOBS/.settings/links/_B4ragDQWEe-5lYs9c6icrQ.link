@@ -1,0 +1,29 @@
+{
+  "itemId" : "_B4ragDQWEe-5lYs9c6icrQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_XVHt8DQWEe-5lYs9c6icrQ",
+    "parameterList" : [ {
+      "id" : "_XV-CgTQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"
+    }, {
+      "id" : "_XV-CgjQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"
+    }, {
+      "id" : "_XV-CgzQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"
+    }, {
+      "id" : "_XV-ChDQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"
+    }, {
+      "id" : "_XV-ChTQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"
+    }, {
+      "id" : "_XV-ChjQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password"
+    }, {
+      "id" : "_XV-ChzQWEe-5lYs9c6icrQ",
+      "name" : "SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"
+    } ]
+  } ]
+}

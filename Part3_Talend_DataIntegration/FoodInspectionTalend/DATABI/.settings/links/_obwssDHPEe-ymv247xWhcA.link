@@ -1,0 +1,23 @@
+{
+  "itemId" : "_obwssDHPEe-ymv247xWhcA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_jPzlMDHPEe-ymv247xWhcA",
+    "parameterList" : [ {
+      "id" : "_jQfhsDHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_File"
+    }, {
+      "id" : "_jQfhsTHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_RowSeparator"
+    }, {
+      "id" : "_jQfhsjHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_FieldSeparator"
+    }, {
+      "id" : "_jQfhszHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_Header"
+    }, {
+      "id" : "_jQfhtDHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_Encoding"
+    } ]
+  } ]
+}

@@ -1,0 +1,29 @@
+{
+  "itemId" : "_STFXkDKOEe-LNasFLlP7GA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_g9LNcDKOEe-LNasFLlP7GA",
+    "parameterList" : [ {
+      "id" : "_g9y4gTKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login"
+    }, {
+      "id" : "_g9y4gjKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database"
+    }, {
+      "id" : "_g9y4gzKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams"
+    }, {
+      "id" : "_g9y4hDKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port"
+    }, {
+      "id" : "_g9y4hTKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema"
+    }, {
+      "id" : "_g9y4hjKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server"
+    }, {
+      "id" : "_g9y4hzKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password"
+    } ]
+  } ]
+}

@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_1hpK4DpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_1hpK4TpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_1hpK4jpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_1hpK4zpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_1hpK5DpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_1hpK5TpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_1hpx8DpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:RXScbQmZ562jveDQlIfiO13A5HtU/hGp3x637HNEvNhdF0qRex8zuQ=="/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" internalId="_1hpx8TpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_1hpx8jpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_1hpx8zpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_1hpx9DpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_1hpx9TpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_1hpx9jpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_1hpx9zpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:xjyx24AjVv4G/+1eFUVvMI2GNMzE2WaghKPbM9U3y0oOHB9Ld4Yfsw=="/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter comment="" internalId="_1hpx-DpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_1hpx-TpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_1hpx-jpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_1hpx-zpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_1hpx_DpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_1hpx_TpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_1hpx_jpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:j9LUJo1TfrFmd08Mdha6Cd8oR5lH9f2tj146mkKRRNOhePT5C7Te/w=="/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" internalId="_1hpx_zpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_1hpyADpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_1hpyATpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_1hpyAjpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_1hpyAzpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_1hpyBDpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_1hpyBTpAEe-wt8-kbyu6FA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:HNXklvPjy4lxdvnCGQrf4gJx2gu1f2pF4Gf9TPQbcnRCnB60VXHyQw=="/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:3Tagrl/EcOmxD3DbVqG98PrkqHLmwKRNx6jXCp87"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:45mq3HJzLmNavum97bt3xcAXR19iTBBlY43DaLfe"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_YeW_gCaEEe-H9Im1u20A6g" name="DataOperation"/>
+    <routinesParameter id="_YeydUCaEEe-H9Im1u20A6g" name="Mathematical"/>
+    <routinesParameter id="_Yf7s0CaEEe-H9Im1u20A6g" name="Numeric"/>
+    <routinesParameter id="_YgfGdiaEEe-H9Im1u20A6g" name="Relational"/>
+    <routinesParameter id="_YYSzwCaEEe-H9Im1u20A6g" name="SQLike"/>
+    <routinesParameter id="_Yg4vECaEEe-H9Im1u20A6g" name="StringHandling"/>
+    <routinesParameter id="_YhdW0CaEEe-H9Im1u20A6g" name="TalendDataGenerator"/>
+    <routinesParameter id="_YhvDoCaEEe-H9Im1u20A6g" name="TalendDate"/>
+    <routinesParameter id="_Yiht0CaEEe-H9Im1u20A6g" name="TalendStringUtil"/>
+    <routinesParameter id="_YiOy4CaEEe-H9Im1u20A6g" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_STFXkDKOEe-LNasFLlP7GA"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wv/aBy7DY0oMufQPtaBLB7QvNoQi2v5/V8oCuViX5xwY+3oD7C4cGEqBBnKI17VePMFSvCHQww/nOhOiWsTDhd6CLA/rODuaX4Z8mwKdOHj/vEdf"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_chicago_inspection_load&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionID,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.DBAName,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.AKAName,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.LicenseNumber,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.FacilityType,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Risk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Address,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.City,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.State,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Zip,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionDate_Str,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionDate,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionType,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Results,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Violations,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Latitude,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Longitude,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Location,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBAName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AKAName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LicenseNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FacilityType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Risk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate_Str"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Results"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_chicago_inspection_load" name="tDBInput_1">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="DBAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="AKAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="LicenseNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="47" name="FacilityType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Risk" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="51" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Zip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="InspectionDate_Str" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="InspectionDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="41" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Results" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Latitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Longitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_lgxIQDpAEe-wt8-kbyu6FA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tuniq" name="tuniq">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="DBAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="AKAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="LicenseNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="47" name="FacilityType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="RiskType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="RiskCategory" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="51" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Zip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="InspectionDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="41" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Results" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Latitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Longitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="Inspection_Score" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="(row1.Violations == null || row1.Violations.isEmpty()) ? 0 : (row1.Violations.length() - row1.Violations.replace(&quot;|&quot;, &quot;&quot;).length())+1 " name="Violation_Cnt" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.Results != null &amp;&amp; !row1.Results.trim().isEmpty() ? (&quot;FAIL&quot;.equals(row1.Results.trim().toUpperCase()) ? 70 : (&quot;PASS W/ CONDITIONS&quot;.equals(row1.Results.trim().toUpperCase()) ? 40 : (&quot;PASS&quot;.equals(row1.Results.trim().toUpperCase()) ? 0 : -999))) : -999 " name="Result_Score" nullable="true" type="id_Integer"/>
+      </varTables>
+      <outputTables name="tuniq" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.InspectionID " name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.DBAName.trim().toUpperCase() " name="DBAName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.AKAName.trim().toUpperCase() " name="AKAName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.LicenseNumber " name="LicenseNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.FacilityType.trim().toUpperCase() " name="FacilityType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Risk != null &amp;&amp; row1.Risk.trim().split(&quot; &quot;).length &gt; 1) ? (row1.Risk.trim().toUpperCase().split(&quot; &quot;)[0] + &quot; &quot; + row1.Risk.trim().toUpperCase().split(&quot; &quot;)[1]) : (row1.Risk != null ? row1.Risk.trim().toUpperCase() : &quot;&quot;).trim() " name="RiskType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Risk != null &amp;&amp; row1.Risk.trim().toUpperCase().equals(&quot;ALL&quot;)) ? &quot;ALL&quot; :(row1.Risk != null &amp;&amp; row1.Risk.contains(&quot;(&quot;) &amp;&amp; row1.Risk.contains(&quot;)&quot;)) ? row1.Risk.trim().toUpperCase().substring(row1.Risk.trim().toUpperCase().indexOf(&quot;(&quot;) + 1, row1.Risk.trim().toUpperCase().indexOf(&quot;)&quot;)) : &quot;UNKNOWN&quot;.trim() " name="RiskCategory" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Address != null &amp;&amp; !row1.Address.trim().isEmpty() ? row1.Address.trim().toUpperCase() : &quot;UNAVAILABLE&quot; " name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.City != null &amp;&amp; !row1.City.trim().isEmpty() ? row1.City.trim().toUpperCase() : &quot;UNAVAILABLE&quot; " name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.State != null &amp;&amp; !row1.State.trim().isEmpty() ? row1.State.trim().toUpperCase() : &quot;UNAVAILABLE&quot; " name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="String.valueOf(row1.Zip)  != null &amp;&amp; !String.valueOf(row1.Zip).trim().isEmpty() &amp;&amp; !&quot;null&quot;.equals(String.valueOf(row1.Zip) .trim()) ? String.valueOf(row1.Zip)  : &quot;UNAVAILABLE&quot; " name="Zip" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row1.InspectionDate) " name="InspectionDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.InspectionType.trim().toUpperCase() " name="InspectionType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Results.trim().toUpperCase() " name="Results" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Violations.trim().toUpperCase() " name="Violations" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Latitude " name="Latitude" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row1.Longitude " name="Longitude" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="Var.Result_Score == -999 ? -999 : ((2 * Var.Violation_Cnt + Var.Result_Score) &gt; 100 ? 0 : 100 - (2 * Var.Violation_Cnt + Var.Result_Score)) " name="Inspection_Score" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DBAName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AKAName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LicenseNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="FacilityType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Risk" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Zip" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="InspectionDate_Str" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionDate" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Results" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Violations" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Latitude" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Longitude" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="Location" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_job_id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBAName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AKAName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LicenseNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FacilityType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RiskType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RiskCategory"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Results"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Score"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tuniq" name="tLogRow_1">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="DBAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="AKAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="LicenseNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="47" name="FacilityType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="RiskType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="RiskCategory" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="51" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Zip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="InspectionDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="VARCHAR" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="41" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Results" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Latitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Longitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="Inspection_Score" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="45" offsetLabelY="0" posX="256" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_STFXkDKOEe-LNasFLlP7GA"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VXMPy8PGlk4dAUEu0lMvRRrtEUSyCNUvbY4HSOeejY3ocV66TPUQUFqtNG1n53DpvOW+B3gRNjpBR5eEG9EvPKIwAIlr9wQR4NDeol/oAQEFrKAN"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_STFXkDKOEe-LNasFLlP7GA - stg_dallas_inspection_load"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_dallas_inspection_load&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.RestaurantName,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.InspectionType,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.InspectionDate_Str,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.InspectionDate,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.InspectionScore,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.StreetNumber,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.StreetName,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.StreetDirection,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.StreetType,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.StreetUnit,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.StreetAddress,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ZipCode,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_1,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_1,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_1,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_1,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_2,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_2,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_2,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_2,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_3,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_3,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_3,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_3,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_4,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_4,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_4,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_4,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_5,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_5,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_5,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_5,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_6,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_6,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_6,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_6,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_7,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_7,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_7,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_7,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_8,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_8,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_8,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_8,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_9,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_9,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_9,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_9,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_10,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_10,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_10,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_10,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_11,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_11,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_11,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_11,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_12,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_12,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_12,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_12,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_13,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_13,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_13,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_13,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_14,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_14,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_14,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_14,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_15,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_15,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_15,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_15,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_16,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_16,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_16,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_16,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_17,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_17,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_17,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_17,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_18,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_18,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_18,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_18,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_19,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_19,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_19,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_19,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_20,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_20,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_20,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_20,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_21,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_21,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_21,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_21,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_22,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_22,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_22,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_22,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_23,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_23,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_23,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_23,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_24,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_24,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_24,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_24,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDescription_25,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationPoints_25,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationDetail_25,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.ViolationMemo_25,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.InspectionMonth,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.InspectionYear,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.LatLongLocation,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_dallas_inspection_load&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RestaurantName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate_Str"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionScore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetDirection"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetUnit"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetAddress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZipCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_15"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_15"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_15"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_15"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_16"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_16"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_16"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_16"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_17"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_17"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_17"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_17"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_18"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_18"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_18"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_18"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_19"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_19"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_19"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_19"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_21"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_21"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_21"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_21"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_22"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_22"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_22"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_22"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_23"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_23"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_23"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_23"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_24"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_24"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_24"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_24"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDescription_25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationPoints_25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationDetail_25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationMemo_25"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionMonth"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionYear"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LatLongLocation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_dallas_inspection_load" name="tDBInput_2">
+      <column comment="" key="false" length="65" name="RestaurantName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="InspectionDate_Str" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="InspectionDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="InspectionScore" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="StreetNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="StreetName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="StreetDirection" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="StreetType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="StreetUnit" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="37" name="StreetAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ZipCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_1" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="910" name="ViolationDetail_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2326" name="ViolationMemo_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="910" name="ViolationDetail_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2569" name="ViolationMemo_2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1043" name="ViolationDetail_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2397" name="ViolationMemo_3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_4" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1018" name="ViolationDetail_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3214" name="ViolationMemo_4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_5" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="910" name="ViolationDetail_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1823" name="ViolationMemo_5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_6" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1018" name="ViolationDetail_6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1665" name="ViolationMemo_6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_7" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1018" name="ViolationDetail_7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1837" name="ViolationMemo_7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_8" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1039" name="ViolationDetail_8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1516" name="ViolationMemo_8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_9" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_9" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="910" name="ViolationDetail_9" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1584" name="ViolationMemo_9" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_10" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_10" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="910" name="ViolationDetail_10" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2087" name="ViolationMemo_10" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_11" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="910" name="ViolationDetail_11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1325" name="ViolationMemo_11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_12" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="994" name="ViolationDetail_12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="502" name="ViolationMemo_12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_13" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_13" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="888" name="ViolationDetail_13" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="881" name="ViolationMemo_13" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_14" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_14" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="888" name="ViolationDetail_14" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="818" name="ViolationMemo_14" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_15" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="888" name="ViolationDetail_15" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="818" name="ViolationMemo_15" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_16" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_16" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="888" name="ViolationDetail_16" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="397" name="ViolationMemo_16" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_17" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_17" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="829" name="ViolationDetail_17" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="225" name="ViolationMemo_17" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_18" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_18" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="829" name="ViolationDetail_18" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="230" name="ViolationMemo_18" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_19" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_19" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="815" name="ViolationDetail_19" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="245" name="ViolationMemo_19" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_20" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="815" name="ViolationDetail_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="247" name="ViolationMemo_20" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_21" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_21" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="815" name="ViolationDetail_21" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="211" name="ViolationMemo_21" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_22" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_22" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="815" name="ViolationDetail_22" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="374" name="ViolationMemo_22" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ViolationDescription_23" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_23" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="815" name="ViolationDetail_23" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="103" name="ViolationMemo_23" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="59" name="ViolationDescription_24" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_24" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="434" name="ViolationDetail_24" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="186" name="ViolationMemo_24" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ViolationDescription_25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ViolationPoints_25" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="482" name="ViolationDetail_25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="171" name="ViolationMemo_25" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="InspectionMonth" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="InspectionYear" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="73" name="LatLongLocation" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_lgxIQDpAEe-wt8-kbyu6FA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_dedup" name="stg_dedup">
+      <column comment="" key="false" length="65" name="RestaurantName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="InspectionDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Result" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="37" name="StreetAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="State" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZipCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="73" name="Latitude" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="73" name="Longitude" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="FacilityType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="InspectionScore" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="InspectionScoreDerived" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Inspection_Score" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="100 - (&#13;&#10;(row2.ViolationPoints_1 == null ? 0 : row2.ViolationPoints_1) +&#13;&#10;(row2.ViolationPoints_2 == null ? 0 : row2.ViolationPoints_2) +&#13;&#10;(row2.ViolationPoints_3 == null ? 0 : row2.ViolationPoints_3) +&#13;&#10;(row2.ViolationPoints_4 == null ? 0 : row2.ViolationPoints_4) +&#13;&#10;(row2.ViolationPoints_5 == null ? 0 : row2.ViolationPoints_5) +&#13;&#10;(row2.ViolationPoints_6 == null ? 0 : row2.ViolationPoints_6) +&#13;&#10;(row2.ViolationPoints_7 == null ? 0 : row2.ViolationPoints_7) +&#13;&#10;(row2.ViolationPoints_8 == null ? 0 : row2.ViolationPoints_8) +&#13;&#10;(row2.ViolationPoints_9 == null ? 0 : row2.ViolationPoints_9) +&#13;&#10;(row2.ViolationPoints_10 == null ? 0 : row2.ViolationPoints_10) +&#13;&#10;(row2.ViolationPoints_11 == null ? 0 : row2.ViolationPoints_11) +&#13;&#10;(row2.ViolationPoints_12 == null ? 0 : row2.ViolationPoints_12) +&#13;&#10;(row2.ViolationPoints_13 == null ? 0 : row2.ViolationPoints_13) +&#13;&#10;(row2.ViolationPoints_14 == null ? 0 : row2.ViolationPoints_14) +&#13;&#10;(row2.ViolationPoints_15 == null ? 0 : row2.ViolationPoints_15) +&#13;&#10;(row2.ViolationPoints_16 == null ? 0 : row2.ViolationPoints_16) +&#13;&#10;(row2.ViolationPoints_17 == null ? 0 : row2.ViolationPoints_17) +&#13;&#10;(row2.ViolationPoints_18 == null ? 0 : row2.ViolationPoints_18) +&#13;&#10;(row2.ViolationPoints_19 == null ? 0 : row2.ViolationPoints_19) +&#13;&#10;(row2.ViolationPoints_20 == null ? 0 : row2.ViolationPoints_20) +&#13;&#10;(row2.ViolationPoints_21 == null ? 0 : row2.ViolationPoints_21) +&#13;&#10;(row2.ViolationPoints_22 == null ? 0 : row2.ViolationPoints_22) +&#13;&#10;(row2.ViolationPoints_23 == null ? 0 : row2.ViolationPoints_23) +&#13;&#10;(row2.ViolationPoints_24 == null ? 0 : row2.ViolationPoints_24) +&#13;&#10;(row2.ViolationPoints_25 == null ? 0 : row2.ViolationPoints_25)&#13;&#10;) " name="InspectionScore_Derived" nullable="true" type="id_Integer"/>
+      </varTables>
+      <outputTables name="stg_dedup" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.RestaurantName.trim().toUpperCase() " name="RestaurantName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.InspectionType.trim().toUpperCase() " name="InspectionType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.InspectionDate " name="InspectionDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.InspectionScore &gt; 70 &amp;&amp; row2.InspectionScore &lt;= 100 ? &quot;PASS&quot; :&#13;&#10;row2.InspectionScore &gt; 40 &amp;&amp; row2.InspectionScore &lt;= 70 ? &quot;PASS W/ CONDITIONS&quot; :&#13;&#10;row2.InspectionScore &gt;= 0 &amp;&amp; row2.InspectionScore &lt;= 40 ? &quot;FAIL&quot; : &quot;N/A&quot; " name="Result" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.StreetAddress != null &amp;&amp; !row2.StreetAddress.trim().isEmpty() ? row2.StreetAddress.trim().toUpperCase() : &quot;UNAVAILABLE&quot; " name="StreetAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;DALLAS&quot;" name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;TX&quot;" name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ZipCode != null &amp;&amp; !row2.ZipCode.trim().isEmpty() &amp;&amp; !&quot;null&quot;.equals(row2.ZipCode.trim()) ? row2.ZipCode : &quot;UNAVAILABLE&quot; " name="ZipCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row2.LatLongLocation.lastIndexOf(&quot;(&quot;) != -1 &amp;&amp; row2.LatLongLocation.lastIndexOf(&quot;)&quot;) != -1 &amp;&amp; row2.LatLongLocation.lastIndexOf(&quot;,&quot;) &gt; row2.LatLongLocation.lastIndexOf(&quot;(&quot;)) ? Float.parseFloat(row2.LatLongLocation.substring(row2.LatLongLocation.lastIndexOf(&quot;(&quot;) + 1, row2.LatLongLocation.lastIndexOf(&quot;,&quot;)).trim()) : -999 " name="Latitude" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="(row2.LatLongLocation.lastIndexOf(&quot;(&quot;) != -1 &amp;&amp; row2.LatLongLocation.lastIndexOf(&quot;)&quot;) != -1 &amp;&amp; row2.LatLongLocation.lastIndexOf(&quot;,&quot;) &gt; row2.LatLongLocation.lastIndexOf(&quot;(&quot;)) ? Float.parseFloat(row2.LatLongLocation.substring(row2.LatLongLocation.lastIndexOf(&quot;,&quot;) + 1, row2.LatLongLocation.lastIndexOf(&quot;)&quot;)).trim()) : -999 " name="Longitude" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="&quot;RESTAURANT&quot;" name="FacilityType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.InspectionScore " name="InspectionScore" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="Var.InspectionScore_Derived " name="InspectionScoreDerived" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.InspectionScore == Var.InspectionScore_Derived ? row2.InspectionScore : Var.InspectionScore_Derived " name="Inspection_Score" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="RestaurantName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionDate_Str" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="InspectionScore" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="StreetNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="StreetName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StreetDirection" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StreetType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StreetUnit" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StreetAddress" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ZipCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_2" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_3" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_4" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_5" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_6" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_6" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_6" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_6" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_7" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_7" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_7" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_7" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_8" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_8" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_8" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_8" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_9" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_9" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_9" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_9" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_10" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_10" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_10" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_10" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_11" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_11" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_11" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_11" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_12" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_12" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_12" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_12" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_13" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_13" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_13" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_13" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_14" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_14" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_14" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_14" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_15" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_15" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_15" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_15" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_16" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_16" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_16" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_16" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_17" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_17" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_17" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_17" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_18" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_18" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_18" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_18" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_19" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_19" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_19" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_19" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_20" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_20" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_20" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_20" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_21" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_21" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_21" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_21" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_22" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_22" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_22" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_22" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_23" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_23" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_23" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_23" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_24" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_24" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_24" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_24" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationDescription_25" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationPoints_25" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDetail_25" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationMemo_25" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionMonth" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionYear" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LatLongLocation" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_job_id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RestaurantName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Result"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StreetAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZipCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FacilityType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionScore"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionScoreDerived"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inspection_Score"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_dedup" name="tLogRow_2">
+      <column comment="" key="false" length="65" name="RestaurantName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="InspectionDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Result" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="37" name="StreetAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="State" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ZipCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="73" name="Latitude" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="73" name="Longitude" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="FacilityType" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="InspectionScore" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="InspectionScoreDerived" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Inspection_Score" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="tuniq" lineStyle="0" metaname="tuniq" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Violation_Cnt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Result_Score"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Inspection_Score"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tuniq"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="stg_dedup" lineStyle="0" metaname="stg_dedup" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="InspectionScore"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InspectionScoreDerived"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Inspection_Score"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="stg_dedup"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3f1adeda-d0b3-409e-bef2-42e5eaa82901"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DZGvjvjjOz4clVztzjuNbGabevWx5haC8C0ogma9BM4IZY5CTkWyDnNXAzU72vO5aStwyPH2KorL&#13;
+MzUbeQ8f8A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_596cba6c-5f04-47fd-86bd-00ed60224764"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>njr/2w6S8xoIfeEzt4HbHRAq6fjlLl4NITKH63QmdHxvnD8sOtvbZAoeL7n69mFAU89lNwiXNn1d&#13;
+NfVF1jPMnA==</DigestValue></Reference></SignedInfo><SignatureValue>fOAi5md0c8ifRMvAkPqQdJtfVA6ySurXTUdu8wfJlvfzmF+HuCo4brFy/kMnlyvaV+vW2Gy789FP&#13;
+26xRvErDiwo8BEfYeI7hRU0d3yKYuAWzU8U1Vjoma3rrf3XHgU4ZnjfjXaiic9/V+DkDMuhpthHT&#13;
+K/4qLvtv2gmH0+J+tnLhSad1bp5jk1pEDLBNoqL2pa7qx7DNuuLUAyHI89qTF1Uj8AoxjsOBedFY&#13;
+Yq8s84XA4K9AgDNNQZR7zSgO3c8gMnbnhCTvvphGbjTnfgFHib7n+FXP9qwBAX8cExQW5nxQ5UoL&#13;
+qdv7674qtTEZ3AYpXRZleD6oU0QyABjsGozB9Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_596cba6c-5f04-47fd-86bd-00ed60224764" Target="#_3f1adeda-d0b3-409e-bef2-42e5eaa82901"><Timestamp>2024-07-04 22:54:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

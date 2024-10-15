@@ -1,0 +1,48 @@
+{
+  "itemId" : "_0DdywDKXEe-LNasFLlP7GA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_g9LNcDKOEe-LNasFLlP7GA",
+    "parameterList" : [ {
+      "id" : "_g9y4gTKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login"
+    }, {
+      "id" : "_g9y4gjKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database"
+    }, {
+      "id" : "_g9y4gzKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams"
+    }, {
+      "id" : "_g9y4hDKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port"
+    }, {
+      "id" : "_g9y4hTKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema"
+    }, {
+      "id" : "_g9y4hjKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server"
+    }, {
+      "id" : "_g9y4hzKOEe-LNasFLlP7GA",
+      "name" : "SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_jPzlMDHPEe-ymv247xWhcA",
+    "parameterList" : [ {
+      "id" : "_jQfhsTHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_RowSeparator"
+    }, {
+      "id" : "_jQfhsDHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_File"
+    }, {
+      "id" : "_jQfhsjHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_FieldSeparator"
+    }, {
+      "id" : "_jQfhszHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_Header"
+    }, {
+      "id" : "_jQfhtDHPEe-ymv247xWhcA",
+      "name" : "Dallas_food_inspection_tsv_structured_Encoding"
+    } ]
+  } ]
+}

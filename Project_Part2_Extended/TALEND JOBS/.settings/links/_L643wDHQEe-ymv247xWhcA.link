@@ -1,0 +1,23 @@
+{
+  "itemId" : "_L643wDHQEe-ymv247xWhcA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_K_m7QDHQEe-ymv247xWhcA",
+    "parameterList" : [ {
+      "id" : "_K_1kwTHQEe-ymv247xWhcA",
+      "name" : "Chicago_food_inspection_tsv_structured_File"
+    }, {
+      "id" : "_K_1kwjHQEe-ymv247xWhcA",
+      "name" : "Chicago_food_inspection_tsv_structured_RowSeparator"
+    }, {
+      "id" : "_K_1kwzHQEe-ymv247xWhcA",
+      "name" : "Chicago_food_inspection_tsv_structured_FieldSeparator"
+    }, {
+      "id" : "_K_1kxDHQEe-ymv247xWhcA",
+      "name" : "Chicago_food_inspection_tsv_structured_Header"
+    }, {
+      "id" : "_K_1kxTHQEe-ymv247xWhcA",
+      "name" : "Chicago_food_inspection_tsv_structured_Encoding"
+    } ]
+  } ]
+}

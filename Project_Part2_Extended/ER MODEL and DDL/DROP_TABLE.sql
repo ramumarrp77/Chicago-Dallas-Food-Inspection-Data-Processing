@@ -1,0 +1,11 @@
+DROP TABLE dbo.fact_inspection_violation;
+DROP TABLE dbo.fact_inspection_info;
+DROP TABLE dbo.dim_violation;
+DROP TABLE dbo.dim_date;
+DROP TABLE dbo.dim_facility_type;
+DROP TABLE dbo.dim_geo;
+DROP TABLE dbo.dim_restaurant;
+DROP TABLE dbo.dim_inspection_type;
+DROP TABLE dbo.dim_result;
+DROP TABLE dbo.dim_risk;
+DROP TABLE dbo.dim_source_details;
