@@ -3,7 +3,20 @@
 ## Overview
 This repository contains an end-to-end Business Intelligence (BI) implementation for food inspections in **Chicago** and **Dallas**. The project involves data extraction, profiling, cleaning, transformation, dimensional modeling, and visualization to analyze food inspection data across these cities.
 
-The technologies used for this project include **ER/Studio**, **Talend**, **Alteryx**, **Python**, **SQL Server (Azure/Local) OR MySQL**, **Power BI**, and **Tableau**.
+## Technologies Used
+
+![ER/Studio](https://img.shields.io/badge/ER%2FStudio-3E5064?style=for-the-badge&logoColor=white)
+![Navicat](https://img.shields.io/badge/Navicat-FF6F00?style=for-the-badge&logoColor=white)
+![Talend](https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white)
+![Alteryx](https://img.shields.io/badge/Alteryx-1c7b9e?style=for-the-badge&logo=alteryx&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-AE2921?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![Azure SQL](https://img.shields.io/badge/Azure%20SQL-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+
+
 
 ## Project Steps
 ### 1. Data Extraction
@@ -55,19 +68,6 @@ The technologies used for this project include **ER/Studio**, **Talend**, **Alte
 ## Important Links
 - **Chicago Food Inspections Data:** [Food Inspections - Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5)
 - **Dallas Food Inspections Data:** [Restaurant and Food Establishment Inspections - Dallas OpenData](https://www.dallasopendata.com/Health-Human-Services/Restaurant-and-Food-Establishment-Inspections/y64m-wzk9)
-
-## Technologies Used
-
-![ER/Studio](https://img.shields.io/badge/ER%2FStudio-3E5064?style=for-the-badge&logoColor=white)
-![Navicat](https://img.shields.io/badge/Navicat-FF6F00?style=for-the-badge&logoColor=white)
-![Talend](https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white)
-![Alteryx](https://img.shields.io/badge/Alteryx-1c7b9e?style=for-the-badge&logo=alteryx&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-AE2921?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![Azure SQL](https://img.shields.io/badge/Azure%20SQL-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
 ## Conclusion
 This project provides a comprehensive BI solution to analyze food inspection data from Chicago and Dallas. By leveraging various tools and technologies, we successfully integrated disparate datasets, created a dimensional model, and provided actionable insights through interactive visualizations.
